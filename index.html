@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <center><h1> It can be hard to find a PickUp game.</h1></center>
+    <center><h2> Find a pickup game in any sport in your region by downloading the app (when its released)</h2></center>
+    <div id="contianer">
+       <center> <form onsubmit ="sendEmail(); reset(); return false;" >
+           <center> <h2>Join the waitlist for updates!</h2></center>
+           <center> <input type= "text" id= "name" placeholder="Your email" required></input></center>
+            <textarea id="message" rows="4" placeholder="Any suggestions?"></textarea>
+            <button type="submit"> Join</button>
+        </form>
+    </div>
+</center>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    border-radius: 10px;
+    background:linear-gradient(90deg,#792fdad8, blue);
+    padding-top: 3%;
+}
+h1{
+    color:white;
+    font-size: 60px;
+}
+h2{
+    color:white;
+    font-size: 40px;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    padding-top: 500%;
+    
+    background: linear-gradient(90deg,#792fdad8, blue);
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background: linear-gradient(90deg,#792fdad8, blue);
+    display:flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    
+    max-width: 1000px;
+    border-radius: 14px;
+}
+
+
+form h3{
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 11%;
+    padding: 23px;
+    outline: black;
+    background:white;
+}
+
+form button{
+    padding: 15px;
+    background: #ff5361;
+    color:white;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    font-size: 20px;
+    
+}
+button:hover{
+    color: lightblue;
+    background-color: rgba(243, 89, 217, 0.63);
+}
+
+
+
+    </style>
+
+<script>
+    function sendEmail() {
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "12345",
+    Password : "password",
+    To : 'adennurie@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form, waitlist",
+    Body : "Name" + document.getElementById("Name").value 
+}).then(
+  message => alert("Thanks for joining!")
+);
+}
+</script>
+</body>
+</html>
