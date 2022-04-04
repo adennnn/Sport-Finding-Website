@@ -1,66 +1,179 @@
-* {
-  font-family: arial;
-}
-h1 {
-  font-family: arial;
-  padding-top: 10%;
-  font-size: 60px;
-}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background:linear-gradient(90deg,#792fdad8, blue );
+    
+  }
+  p{
+      color:white;
+      font-size: 20px;
+  }
 
-f {
-  border-radius: 10px;
-}
-l {
-  border-radius: 10px;
-  background: linear-gradient(45deg, rgb(236, 226, 226), rgb(112, 119, 182));
-}
-p {
-  font-family: arial;
-  color: black;
-  font-size: 30px;
-}
-button {
-  padding-right: 20px;
-  width: 50%;
-}
-
-button {
-  border-radius: 15px;
+ 
+  html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+  }
+  
+  
+  .container{
+    margin:auto;
+    max-width: 11000px;
+    overflow:auto;
+    padding:0 20px;
+  }
+  
+  
+  a{
+    color: #333;
+    text-decoration: none;
+  }
+  
+  h1,h2,h3{
+    padding-bottom: 20px;
+  }
+  
+  p{
+    margin: 10px 0;
+  }
+  
+  #navbar{
+    background: linear-gradient(90deg,#792fdad8, blue);
+    color: blue;
+    overflow:hidden;
+    
+  }
+  
+  #navbar a{
+    color:white;
+  }
+  
+  
+  #navbar h1 {
+    float: left;
+    padding-top: 20px;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    float:right;
+    
+  }
+  
+  #navbar ul li {
+    float:left;
+  }
+  
+  #navbar    {
+    display: block;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  
+  #navbar ul li a:hover, 
+  #navbar ul li a.current {
+    background: #444;
+    
+  }
+  
+  #showcase .showcase-content{
+    color: white;
+    text-align: center;
+    padding-top: 170px;
+  }
+  
+  #showcase .showcase-content h1{
+    font-size: 60px;
+    line-height: 1.2em;
+  }
+  
+  .text-primary{
+    color: white;
+    background-color:white;
+  }
+  
+  .lead{
+    font-size:32px;
+  }
+  
+  button{
+    font-size: 40px;
+    display: inline-block;
+    color:white;
+    background: #3333;
+    border: radius 15px;
+    border:none;
+    cursor:pointer;
+    border-radius: 15px;
   border-color: black;
   size: 40px;
-  background: linear-gradient(45deg, rgb(236, 226, 226), rgb(112, 119, 182));
-}
-h2 {
-  border-radius: 50px;
-  font-size: 40px;
-  color: black;
-}
-header {
-  border-radius: 50px;
-  font-size: 40px;
-}
-body {
-  background: linear-gradient(45deg, white, blue);
-}
-
-h3 {
-  color: black;
-  font-size: 30px;
-  border-radius: 40px;
-}
-
-h4 {
-  color: black;
-  font-size: 53px;
-  border-radius: 40px;
-}
-
-.button2 {
-  object-position: -10%;
-  flot: left;
-}
-
-.ButtonConnect {
-  float: right;
-  width: 30%;
-}
+  background: linear-gradient(45deg, #6521e4, blue);
+  }
+  
+  button:hover{
+    background: #3333;
+    color: white;
+  }
+  h1{
+      color:white;
+  }
+  
+  #showcase .showcase-content p{
+    padding-bottom: 50px;
+    line-height: 1.7em;
+  }
+  
+  #home-info{
+    height:400px;
+  }
+  
+  
+  
+  #home-info  {
+    float:right;
+    width:50%;
+    height:100%;
+    text-align:center;
+    padding:50px 30px;
+    overflow:hidden;    
+  }
+  
+  #home-onfo{
+    float:right;
+    width:50%;
+    height:100%;
+    text-align:center;
+    padding:50px 30px;
+    overflow:hidden;    
+  }
+  
+  /* Contact Form */
+  #contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #contact-form input, 
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+    border-radius: 20px;
+  }
+  
+  #contact-form textarea {
+    height: 200px;
+  }
+  
+  #contact-form input:focus, 
+  #contact-form textarea:focus {
+    outline: none;
+    
+  }
+  
+  
