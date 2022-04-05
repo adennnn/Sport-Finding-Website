@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>PickUp</title>
+
+</head>
+<body>
+
+    <center><h1> PickUp games, for any sport, made easy.</h1></center>
+    
+    <center> <a href="index_.html"><button id="red"> Learn More </button></a> </center>
+    
+</center>
+
+    
+        
+        <div id="contianer">
+            <center> <form onsubmit ="sendEmail(); reset(); return false;" >
+                <center> <h2>Join the waitlist for updates!</h2></center>
+                <center> <input type= "text" id= "name" placeholder="Your email" required></input></center>
+                 <button type="submit"> Join</button>
+             </form>
+         </div>
+   
+
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    
+<script>
+    function sendEmail() {
+        Email.send({
+    Host : "smtp.gmail.com",
+    Username : "12345",
+    Password : "password",
+    To : 'adennurie@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form, waitlist",
+    Body : "Name" + document.getElementById("Name").value 
+}).then(
+  message => alert("Thanks for joining!")
+);
+}
+</script>
+</body>
+</html> 
